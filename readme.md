@@ -1,4 +1,4 @@
-# Landing page of devfest 2017
+# Landing page of devfest 2018
 
 **Steps to run :**
 
