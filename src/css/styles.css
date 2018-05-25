@@ -42,7 +42,10 @@
     padding: 0!important;
 }
 .section-content-container,.section-illustration-container{
-    padding: 0 50px !important;
+    padding: 0 50px 50px 50px !important;
+}
+.section-content-container.right{
+    text-align: right;
 }
 .section-illustration-container{
     padding-top: 80px !important;
@@ -60,7 +63,7 @@
 }
 .section-illustration{
     display: block;
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -70,7 +73,7 @@
     .know-more{
         text-align: left;
         margin:0;
-        transform: translateX(-9px);
+        transform: translateX(-10px);
     }
     .section-illustration{
         width: 100%;
@@ -78,4 +81,21 @@
     .section-svg-container{
         text-align: right;
     }
+    .section-content-container.right{
+        text-align: left;
+    }
+}
+
+
+/*SVG Styles*/
+.inner-circle{
+    fill: #7b47d1;
+}
+.line-segment {
+    fill: none;
+    stroke: #7b47d1;
+    stroke-width: 10px;
+}
+.connect{
+    transform: translateY(-10px);
 }
