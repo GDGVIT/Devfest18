@@ -44,7 +44,7 @@
 .section-content-container,.section-illustration-container{
     padding: 0 50px 50px 50px !important;
 }
-.section-content-container.right{
+.right-column{
     text-align: right;
 }
 .section-illustration-container{
@@ -71,9 +71,12 @@
 
 @media (max-width: 600px) {
     .know-more{
-        text-align: left;
+        text-align: center;
+        transform: translate(16px,-5px);
         margin:0;
-        transform: translateX(-10px);
+    }
+    .section-content-container,.section-illustration-container{
+        padding: 0 20px 20px 20px !important;
     }
     .section-illustration{
         width: 100%;
@@ -81,8 +84,17 @@
     .section-svg-container{
         text-align: right;
     }
-    .section-content-container.right{
+    .right-column{
         text-align: left;
+    }
+    .start{
+        display: none;
+    }
+    .connect{
+        position: absolute;
+        display: block;
+        top: -8px;
+        z-index: -1;
     }
 }
 
@@ -97,5 +109,9 @@
     stroke-width: 10px;
 }
 .connect{
-    transform: translateY(-10px);
+    position: absolute;
+    display: block;
+    top: -8px;
+    left:calc(50% - 22px);
+    z-index: -1;
 }
