@@ -84,6 +84,7 @@
         }
         .title,.title-illustration{
             flex-grow: 1;
+            width: 50vh;
         }
         .title{
             align-self: center;
@@ -128,6 +129,9 @@
                 flex-direction: column;
                 margin-bottom: 20px;
             }
+            .title,.title-illustration{
+                width: 100vw;
+            }
             .title{
                 width: 100%;
             }
@@ -149,68 +153,115 @@
                 width:90%;
             }
         }
-        </style>
-        <script async defer type="text/javascript" src="js/bundle.js"></script>
-    </head>
+    </style>
+    <script async defer type="text/javascript" src="js/bundle.js"></script>
+</head>
 
-    <body>
-    <div class="critical-render">
-        <div class="trapezium"></div>
-        <div class="critical-content">
-            <div class="title">
-                <h1>Devfest <span class="year">2018</span></h1>
-                <h4>An event by DSC VIT Vellore</h4>
+<body>
+<div class="critical-render">
+    <div class="trapezium"></div>
+    <div class="critical-content">
+        <div class="title">
+            <h1>Devfest <span class="year">2018</span></h1>
+            <h4>An event by DSC VIT Vellore</h4>
+        </div>
+        <div class="title-illustration">
+            <img src="./img/landing.png" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="non-critical">
+    <div class="row">
+        <div class="col s12 m12" style="padding:0;">
+            <span class="block black-block know-more">Know More</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s1 m2 offset-m5 section-svg-container">
+            <svg class="start" height="320px" width="44px">
+                <path class="line-segment" d="M22,0 v320"></path>
+            </svg>
+        </div>
+    </div>
+    <!--Resize contents-->
+    <div class="row resize-height">
+        <div class="col s10 m5 push-s2 section-content-container">
+            <h2><span class="circle-block purple-block">1</span> <span class="section-title">The Hack</span></h2>
+            <p class="section-content">*Hack* is a two week long extensive hack aiming to bring out developers with innovative solutions to real world problems. You will have the support of mentors who would guide you throughout the two week period. *Hack* is a platform to test your potential and in parallel, help you apply and improve your skills with the aid of experienced and supportive mentors. It is an unparalleled opportunity to build something incredible and employ a novel approach which could potentially solve problems for thousands of people. With time and expertise on your side, all you need is an eagerness to learn and a never give up attitude. There will be multiple reviews in which the top teams go through. The teams who qualify for the final round will get exclusive invites to the conference and get a chance to interact with the speakers one-on-one.</p>
+        </div>
+        <div class="col s2 m2 pull-s10 section-svg-container">
+            <svg class="connect" height="320px" width="44px">
+                <circle class="inner-circle" cx="22" cy="44" r="22"></circle>
+                <path class="line-segment" d="M22,0 v300"></path>
+            </svg>
+        </div>
+        <div class="col s10 m5 offset-s2 section-illustration-container">
+            <img src="./img/hack.png" alt="" class="section-illustration">
+        </div>
+    </div>
+    <div class="row resize-height">
+        <div class="col s10 m5 push-m7 push-s2 section-content-container right-column">
+            <h2><span class="hide-on-med-and-up"><span class="circle-block purple-block">2</span> </span><span class="section-title">The Conference</span> <span class="circle-block purple-block hide-on-small-only">2</span></h2>
+            <p class="section-content">This conference provides a platform for students to interact with professionals from  	various fields willing to share their unique experiences. Tech enthusiasts share their experiences and provide the beginners with a new vision towards technological advancement. The conference begins with keynote sessions by all the speakers, followed by an engaging panel discussion and a Q&A session. Not only this, curious students who are seen to be most involved in the conference will be given a chance for influential networking with the panel of speakers. </p>
+        </div>
+        <div class="col s2 m2 pull-s10 section-svg-container">
+            <svg class="connect" height="320px" width="44px">
+                <circle class="inner-circle" cx="22" cy="44" r="22"></circle>
+                <path class="line-segment" d="M22,0 v300"></path>
+            </svg>
+        </div>
+        <div class="col s10 m5 pull-m7 offset-s2 section-illustration-container">
+            <img src="./img/conference.png" alt="" class="section-illustration">
+        </div>
+    </div>
+    <div class="row resize-height">
+        <div class="col s10 m5 push-s2 section-content-container">
+            <h2><span class="circle-block purple-block">3</span> <span class="section-title">What to expect</span></h2>
+            <div class="row expect-control">
+                <div class="col s6">
+                    <div class="circle-container circle">
+                        <img src="./img/Group%203.svg" alt="">
+                    </div>
+                    <h5 class="circle-caption">Conference</h5>
+                </div>
+                <div class="col s6">
+                    <div class="circle-container circle">
+                        <img src="./img/Group%204.svg" alt="">
+                    </div>
+                    <h5 class="circle-caption">Networking</h5>
+                </div>
+                <div class="col s6">
+                    <div class="circle-container circle">
+                        <img src="./img/Group%202.svg" alt="">
+                    </div>
+                    <h5 class="circle-caption">Hackathon</h5>
+                </div>
             </div>
-            <div class="title-illustration">
-                <img src="./img/300x300.png" alt="">
+        </div>
+        <div class="col s2 m2 pull-s10 section-svg-container">
+            <svg class="connect" height="320px" width="44px">
+                <circle class="inner-circle" cx="22" cy="44" r="22"></circle>
+                <path class="line-segment" d="M22,0 v300"></path>
+            </svg>
+        </div>
+        <div class="col s10 m5 offset-s2 section-content-container right-column">
+            <div class="expect-content">
+                <div class="section-content">This conference provides a platform for students to interact with industry professionals from various fields willing to share their unique experiences. The conference will begin with keynote sessions by all the speakers, followed by an engaging panel discussion and a Q&A session. Moreover, students who actively engage in the discussions will be given a chance to participate in a networking with the speakers.
+                    <br>Our orators can also provide a chance to support those with really effective projects as well as the required skills. The participants of Hackathon can avail this opportunity by showcasing the projects they worked upon for the hack. The in-depth discussion of the same will also be held for the top selected team members.</div>
+                <div class="section-content">Selected individuals will get a chance to have one-on-one talk with experts regarding their projects. Individuals who have been consistently active and involved in the conference might get a chance to network with the speakers.
+                    <br> Talk. Discuss. Ideate. Connect. Get a chance to go one-on-one with the speakers during the networking session.</div>
+                <div class="section-content">*Hack* is a two week long extensive hack aiming to bring out developers with innovative solutions to real world problems. You will have the support of mentors who would guide you throughout the two week period. *Hack* is a platform to test your potential and in parallel, help you apply and improve your skills with the aid of experienced and supportive mentors. It is an unparalleled opportunity to build something incredible and employ a novel approach which could potentially solve problems for thousands of people. With time and expertise on your side, all you need is an eagerness to learn and a never give up attitude. There will be multiple reviews in which the top teams go through. The teams who qualify for the final round will get exclusive invites to the conference and get a chance to interact with the speakers one-on-one.</div>
             </div>
         </div>
     </div>
-
-    <div class="non-critical">
-        <div class="row">
-            <div class="col s12 m12" style="padding:0;">
-                <span class="block black-block know-more">Know More</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s1 m2 offset-m5 section-svg-container">
-                <svg class="start" height="320px" width="44px">
-                    <path class="line-segment" d="M22,0 v320"></path>
-                </svg>
-            </div>
-        </div>
-        <!--Resize contents-->
-        <div class="row resize-height">
-            <div class="col s10 m5 push-s2 section-content-container">
-                <h2><span class="circle-block purple-block">1</span> <span class="section-title">The Hack</span></h2>
-                <p class="section-content">*Hack* is a two week long extensive hack aiming to bring out developers with innovative solutions to real world problems. You will have the support of mentors who would guide you throughout the two week period. *Hack* is a platform to test your potential and in parallel, help you apply and improve your skills with the aid of experienced and supportive mentors. It is an unparalleled opportunity to build something incredible and employ a novel approach which could potentially solve problems for thousands of people. With time and expertise on your side, all you need is an eagerness to learn and a never give up attitude. There will be multiple reviews in which the top teams go through. The teams who qualify for the final round will get exclusive invites to the conference and get a chance to interact with the speakers one-on-one.</p>
-            </div>
-            <div class="col s2 m2 pull-s10 section-svg-container">
-                <svg class="connect" height="320px" width="44px">
-                    <circle class="inner-circle" cx="22" cy="44" r="22"></circle>
-                    <path class="line-segment" d="M22,0 v300"></path>
-                </svg>
-            </div>
-            <div class="col s10 m5 offset-s2 section-illustration-container">
-                <img src="./img/300x300.png" alt="" class="section-illustration">
-            </div>
-        </div>
-        <div class="row resize-height">
-            <div class="col s10 m5 push-m7 push-s2 section-content-container right-column">
-                <h2><span class="hide-on-med-and-up"><span class="circle-block purple-block">2</span> </span><span class="section-title">The Conference</span> <span class="circle-block purple-block hide-on-small-only">2</span></h2>
-                <p class="section-content">This conference provides a platform for students to interact with professionals from  	various fields willing to share their unique experiences. Tech enthusiasts share their experiences and provide the beginners with a new vision towards technological advancement. The conference begins with keynote sessions by all the speakers, followed by an engaging panel discussion and a Q&A session. Not only this, curious students who are seen to be most involved in the conference will be given a chance for influential networking with the panel of speakers. </p>
-            </div>
-            <div class="col s2 m2 pull-s10 section-svg-container">
-                <svg class="connect" height="320px" width="44px">
-                    <circle class="inner-circle" cx="22" cy="44" r="22"></circle>
-                    <path class="line-segment" d="M22,0 v300"></path>
-                </svg>
-            </div>
-            <div class="col s10 m5 pull-m7 offset-s2 section-illustration-container">
-                <img src="./img/300x300.png" alt="" class="section-illustration">
-            </div>
+    <!--Speakers Section-->
+    <!--Speakers Section End-->
+    <div class="row">
+        <div class="col s12 m12" style="padding:0;transform: translateY(-8px)">
+            <span class="block black-block know-more">Timeline</span>
         </div>
     </div>
-    </body>
+</div>
+</body>
 </html>
