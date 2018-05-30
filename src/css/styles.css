@@ -182,8 +182,12 @@
     }
 
     /*Timeline mobile*/
+    .timeline-title{
+        margin-left: 7%;
+        transform: translateY(-15px);
+    }
     .timeline-container{
-        padding: 25px 10%;
+        padding: 25px 7%;
     }
     .bottom-line,.top-line,.left-line,.right-line{
         display: none;
