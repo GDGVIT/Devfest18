@@ -7,9 +7,9 @@ function resize($elem,isheight){
     let $path = $svg.find('.line-segment');
     let oldPath=$path.attr("d");
     let newPath=oldPath.split(' ');
-    newPath[1]=`v${isheight?h:w}`;
+    newPath[1]=`${isheight?'v':'h'}${isheight?h:w}`;
     newPath=newPath.join(' ');
-    $svg.height(h);
+    isheight?$svg.height(h):$svg.width(w);
     $path.attr("d",newPath);
 }
 export default resize;

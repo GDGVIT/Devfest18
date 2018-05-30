@@ -82,7 +82,75 @@
     color: #fff;
     text-align: center;
 }
+.vertical-shift{
+    transform: translateY(calc(-50% + 33.75px));
+}
 
+/*Timeline styles*/
+.timeline-container{
+    padding: 25px 20%;
+}
+.timeline-container .col{
+    padding: 0!important;
+}
+.day-one{
+    margin:0;
+}
+.day-two-container{
+    transform: translateY(-50%);
+}
+.fixed-height{
+    height: 300px;
+}
+.line-container{
+    position: relative;
+}
+.line-container .circle-caption{
+    transform: scale(0.75);
+}
+.left-line{
+    position: absolute;
+    left: 0;
+}
+.right-line{
+    position: absolute;
+    right: 0;
+}
+.bottom-line{
+    position: absolute;
+    bottom: -10px;
+}
+.top-line{
+    position: absolute;
+    top: -20px;
+}
+.timeline-content{
+    transform: translate(12.5%,-50%);
+}
+.time-container{
+    position: relative;
+}
+.time-top,.time-bottom{
+    position: absolute;
+    left: calc(50% - 100px);
+}
+.time-top{
+    transform: scale(0.5) translateY(-75%);
+    top:0;
+}
+.time-bottom{
+    transform: scale(0.5) translateY(-25%);
+    bottom: 0;
+}
+.mobile-timeline-vertical-line,.mobile-timeline-horizontal-line{
+    display: none;
+}
+.timeline-section{
+    position: relative;
+}
+.timeline-end{
+    transform: translate(50% ,calc(-50%))
+}
 /*Mobile styles*/
 
 @media (max-width: 600px) {
@@ -111,6 +179,44 @@
         display: block;
         top: -8px;
         z-index: -1;
+    }
+
+    /*Timeline mobile*/
+    .timeline-container{
+        padding: 25px 10%;
+    }
+    .bottom-line,.top-line,.left-line,.right-line{
+        display: none;
+    }
+    .fixed-height{
+        height: unset !important;
+        padding: 20px 0 0 0;
+    }
+    .day-two-container{
+        transform: translateY(10px);
+    }
+    .timeline-content{
+        transform: none;
+        padding: 20px 0 0 0;
+    }
+    .timeline-content>.col{
+        position: relative;
+    }
+    .mobile-timeline-vertical-line{
+        display: block;
+        position: absolute;
+        top: 67.5px;
+        left: 0;
+    }
+    .mobile-timeline-horizontal-line{
+        display: block;
+        width: 50%;
+        position: absolute;
+        top: calc(50% - 5px);
+        z-index: -1;
+    }
+    .timeline-end{
+        transform: none;
     }
 }
 
