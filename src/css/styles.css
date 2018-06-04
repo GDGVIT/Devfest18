@@ -1,4 +1,13 @@
 /*Desktop Styles*/
+.title  h4
+{
+    margin: 0 .912rem 0!important;
+}
+
+.title h1
+{
+    margin: 2.1rem 0 0 0!important;
+}
 
 .non-critical *{
     margin:0 ;
@@ -62,7 +71,7 @@
     display: block;
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 20% !important;
+    padding: 10vw !important;
 }
 .circle-container{
     padding: 25px;
@@ -141,6 +150,7 @@
 .time-bottom{
     transform: scale(0.5) translateY(-25%);
     bottom: 0;
+    margin-bottom:10px;
 }
 .mobile-timeline-vertical-line,.mobile-timeline-horizontal-line{
     display: none;
@@ -184,6 +194,7 @@
     }
     .section-illustration{
         width: 100%;
+        padding: 50px!important;
     }
     .section-svg-container{
         text-align: right;
