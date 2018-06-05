@@ -1,4 +1,23 @@
 /*Desktop Styles*/
+footer
+{
+    background-color: #7b47d1;
+    padding: 10vh 0;
+    font-family: 'Muli', sans-serif;
+    font-size:2vh;
+}
+
+.social-heading{
+    text-align: right;
+    margin: 10px 10px 10px 0!important;
+}
+
+.contact-us-heading{
+    margin: 10px 0!important;
+}
+.contact-us{
+    text-align: left;
+}
 .title  h4
 {
     margin: 0 .912rem 0!important;
@@ -165,7 +184,7 @@
 .social{
     display: flex;
     align-content:space-around;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .social-item{
     width: 50px;
@@ -256,6 +275,22 @@
     }
     .timeline-end{
         transform: none;
+    }
+    .social{
+        justify-content: center;
+    }
+    .social-heading{
+        text-align: center;
+    }
+    .contact-us{
+        text-align: center;
+    }
+    footer
+    {
+        padding-top:5vh;
+    }
+    .social-container{
+        margin-top:3vh;
     }
 }
 
