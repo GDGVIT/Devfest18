@@ -2,8 +2,9 @@
 footer
 {
     background-color: #7b47d1;
-    padding-top: 10vh;
-    height:40vh;
+    padding: 10vh 0;
+    font-family: 'Muli', sans-serif;
+    font-size:2vh;
 }
 
 .social-heading{
@@ -17,7 +18,6 @@ footer
 .contact-us{
     text-align: left;
 }
-
 .title  h4
 {
     margin: 0 .912rem 0!important;
@@ -215,6 +215,9 @@ footer
         width: 100%;
         padding: 50px!important;
     }
+    .expect-content{
+        padding-bottom: 30px;
+    }
     .section-svg-container{
         text-align: right;
     }
@@ -255,6 +258,7 @@ footer
     }
     .timeline-content>.col{
         position: relative;
+        padding: 10px 0 !important;
     }
     .mobile-timeline-vertical-line{
         display: block;
