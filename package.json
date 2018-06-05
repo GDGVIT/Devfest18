@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "cross-env NODE_ENV=dev gulp",
-    "build": "cross-env NODE_ENV=prod gulp",
+    "build": "cross-env NODE_ENV=prod gulp build",
     "deploy": "gulp deploy"
   },
   "author": "Vineeth S <svineth.face@gmail.com>",

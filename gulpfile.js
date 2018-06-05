@@ -98,25 +98,19 @@ gulp.task('build',['clean'], function() {
         .pipe(source('bundle.js'))
         .pipe(streamify(uglify()))
         .pipe(buffer())
-        .pipe(gulp.dest(`${__dirname}/dist/js`));
-
-    gulp.src(cssAssets)
-        .pipe(concat('bundle.css'))
-        .pipe(cleanCSS())
-        .pipe(purify([`${__dirname}/dist/**/*.js`,`${__dirname}/dist/**/*.html`]))
-        .pipe(gulp.dest(`${__dirname}/dist/css`));
+        .pipe(gulp.dest(`${__dirname}/build/js`));
 
     gulp.src(`${__dirname}/src/img/*`)
         .pipe(imagemin([imagemin.optipng({optimizationLevel: 7})]))
-        .pipe(gulp.dest(`${__dirname}/dist/img`));
+        .pipe(gulp.dest(`${__dirname}/build/img`));
 
     gulp.task('fonts',function () {
         gulp.src(`${__dirname}/src/fonts/*`)
-            .pipe(gulp.dest(`${__dirname}/dist/fonts`));
+            .pipe(gulp.dest(`${__dirname}/build/fonts`));
     });
 
     gulp.src(`${__dirname}/src/manifest.json`)
-        .pipe(gulp.dest(`${__dirname}/dist`));
+        .pipe(gulp.dest(`${__dirname}/build`));
 
     gulp.src(`${__dirname}/src/index.html`)
         .pipe(htmlmin({
@@ -126,18 +120,24 @@ gulp.task('build',['clean'], function() {
                 removeComments:true
             })
         )
-        .pipe(gulp.dest(`${__dirname}/dist`));
-/*
-    gulp.src(`${__dirname}/dist/!**!/!*`)
-        .pipe(rev())
-        .pipe(revDelete())
-        .pipe(gulp.dest('dist'))
-        .pipe(revRewrite(rev.manifest()))
-        .pipe(gulp.dest('dist'));*/
+        .pipe(gulp.dest(`${__dirname}/build`));
+
+    gulp.src(cssAssets)
+        .pipe(concat('bundle.css'))
+        .pipe(cleanCSS())
+        .pipe(gulp.dest(`${__dirname}/build/css`));
+
+    /*
+        gulp.src(`${__dirname}/dist/!**!/!*`)
+            .pipe(rev())
+            .pipe(revDelete())
+            .pipe(gulp.dest('dist'))
+            .pipe(revRewrite(rev.manifest()))
+            .pipe(gulp.dest('dist'));*/
 });
 
 //Gulp task for automated deploy
 gulp.task('deploy', function() {
-    return gulp.src(`${__dirname}/dist/**/*`)
+    return gulp.src(`${__dirname}/build/**/*`)
         .pipe(ghPages());
 });
