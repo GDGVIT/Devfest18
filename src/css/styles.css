@@ -6,7 +6,16 @@ footer
     font-family: 'Muli', sans-serif;
     font-size:2vh;
 }
+nav{
+    background-color: transparent;!important;
+}
 
+.field1,.field2,.field3 {
+    margin-bottom: 3vh;
+    width: 359px;
+    height: 65.2px;
+    background-color: #7644c7;
+}
 .social-heading{
     text-align: right;
     margin: 10px 10px 10px 0!important;

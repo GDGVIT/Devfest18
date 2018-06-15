@@ -6,6 +6,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=0.7, maximum-scale=0.7, minimum-scale=0.7">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>DevFest 18</title>
     <!--<link href="https://fonts.googleapis.com/css?family=Lato|Muli" rel="stylesheet">-->
     <link rel="manifest" href="./manifest.json">
@@ -117,6 +118,7 @@
             width:65%;
             height: auto
         }
+
         @media (max-width:600px) {
             .trapezium{
                 border-width: 60vh 100vw 0 0;
@@ -159,6 +161,20 @@
 
 <body>
 <div class="critical-render">
+    <nav>
+        <div class="nav01 nav-wrapper">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Conference</a></li>
+                <li><a href="#">Hackathon</a></li>
+                <li><a href="#">Timeline</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Previous Events</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
     <div class="trapezium"></div>
     <div class="critical-content">
         <div class="title">
@@ -571,6 +587,17 @@
                                     <path class="line-segment" d="M0,5 h30"></path>
                                 </svg>
                             </div>
+                            <div class="resize-width">
+                                <svg class="top-line top" height="44px" width="30px">
+                                    <path class="line-segment" d="M70,22 h30"></path>
+                                </svg>
+                            </div>
+                            <div class="right-line">
+                                <svg height="30px" width="10px">
+                                    <path class="line-segment" d="M5,0 h60"></path>
+                                </svg>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -584,6 +611,26 @@
 
     </div>
     <!--Timeline End-->
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s4 field1">
+                    <input placeholder="Placeholder" id="name" type="text" class="validate">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="input-field col s4 field2">
+                    <input id="email" type="email" class="validate" placeholder="Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s4 field3">
+                        <input id="email_inline" type="email" class="validate" placeholder="Registration Number">
+                    </div>
+            </div>
+
+        </form>
+    </div>
     <footer>
         <div class="row" >
             <div class="col s12 m4 l4 offset-l2 contact-us">
