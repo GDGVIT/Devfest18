@@ -15,6 +15,18 @@ input {
     background: transparent; !important;
     /*border-bottom: 1px solid black;*/
 }
+
+#conf_img{
+    width: 100px; !important;
+    height: 432.6px; !important;
+}
+.eventCol{
+    width: 214.7px; !important;
+    height: 311.1px; !important;
+}
+
+
+
 .field1,.field2,.field3 {
     padding-top:12px !important;
     border: 0px !important;
@@ -23,8 +35,7 @@ input {
     margin-top: 2vh !important;
     width: 359px;
     height: 65.2px;
-    background-color: #7644c7;
-    font-family: ProductSans;
+    background-color: #7644c7 !important;
     font-size: 30px !important;
     font-weight: bold;
     font-style: normal;
@@ -129,8 +140,9 @@ input {
 }
 .section-illustration{
     display: block;
-    width: 100%;
-    margin: 0 auto;
+    margin-top: -150px;
+    width: 800px;
+    height: auto;
     padding: 10vw !important;
 }
 .circle-container{

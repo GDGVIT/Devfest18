@@ -4263,13 +4263,13 @@ nav .button-collapse i {
   line-height: 56px;
 }
 
-nav .brand-logo {
-  position: absolute;
-  color: #fff;
-  display: inline-block;
-  font-size: 2.1rem;
-  padding: 0;
-}
+/*nav .brand-logo {*/
+  /*position: absolute;*/
+  /*color: #fff;*/
+  /*display: inline-block;*/
+  /*font-size: 2.1rem;*/
+  /*padding: 0;*/
+/*}*/
 
 nav .brand-logo.center {
   left: 50%;
@@ -4681,8 +4681,11 @@ small {
 
 .card {
   position: relative;
-  margin: 0.5rem 0 1rem 0;
-  background-color: #fff;
+  color:white;
+  width: 400px;
+  margin-top: 10px;
+  height: 600.1px fixed;
+  background-color: #642ea2;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
   transition: box-shadow .25s;
@@ -4707,7 +4710,15 @@ small {
   max-height: 60%;
   overflow: hidden;
 }
-
+.card-content{
+  display: block;
+  color: #fff;
+  font-family: 'Muli', sans-serif !important;
+  font-size: 20px;
+  /*font-weight: 700;*/
+  /*width: 200px;*/
+  margin: 0 auto;
+}
 .card.small .card-image + .card-content, .card.medium .card-image + .card-content, .card.large .card-image + .card-content {
   max-height: 40%;
 }
@@ -7400,6 +7411,24 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav .divider {
   margin: 8px 0 0 0;
 }
+.submit{
+  background: transparent;
+  border:0px;
+}
+.submit:active{
+  background: none;
+}
+.badge{
+  margin-top: 20px !important;
+  width: 57px; !important;
+  height: 57px; !important;
+}
+.brandLogo{
+  margin-left: 5vh;
+  width: 37px; !important;
+  height: 37px; !important;
+}
+
 
 .side-nav .subheader {
   cursor: initial;
@@ -8447,7 +8476,7 @@ input[type=range]:focus::-ms-fill-upper {
  * When the picker is opened, the input element is "activated".
  */
 .picker__input.picker__input--active {
-  border-color: #0089ec;
+  /*border-color: #0089ec;*/
 }
 
 /**
@@ -8797,7 +8826,7 @@ input[type=range]:focus::-ms-fill-upper {
   border-radius: 50%;
   -webkit-transform: scale(0.75);
           transform: scale(0.75);
-  background: #0089ec;
+  /*background: #0089ec;*/
   color: #ffffff;
 }
 
@@ -9094,13 +9123,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   cursor: pointer;
   color: #000;
   background: #b1dcfb;
-  border-color: #0089ec;
+  /*border-color: #0089ec;*/
   z-index: 10;
 }
 
 /* Highlighted and hovered/focused time */
 .picker__list-item--highlighted {
-  border-color: #0089ec;
+  /*border-color: #0089ec;*/
   z-index: 10;
 }
 
@@ -9115,7 +9144,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .picker__list-item--selected,
 .picker__list-item--selected:hover,
 .picker--focused .picker__list-item--selected {
-  background: #0089ec;
+  /*background: #0089ec;*/
   color: #fff;
   z-index: 10;
 }
