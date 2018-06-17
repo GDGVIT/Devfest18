@@ -24,6 +24,14 @@ input {
     width: 214.7px; !important;
     height: 311.1px; !important;
 }
+#parallelogram {
+    width: 150px;
+    height: 100px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    background: red;
+}
 
 
 

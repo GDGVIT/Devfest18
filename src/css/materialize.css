@@ -4680,11 +4680,12 @@ small {
 }
 
 .card {
+  /*display: block;*/
   position: relative;
   color:white;
   width: 400px;
   margin-top: 10px;
-  height: 600.1px fixed;
+  max-height: 6000px;
   background-color: #642ea2;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
@@ -7415,7 +7416,7 @@ input[type=range]:focus::-ms-fill-upper {
   background: transparent;
   border:0px;
 }
-.submit:active{
+.submit:focus{
   background: none;
 }
 .badge{
@@ -9379,4 +9380,33 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   stroke-width: 4;
   stroke-linecap: round;
   /*shape-rendering: crispEdges;*/
+}
+
+
+/*Not from materilaize library
+*/
+#parallelogram{
+  width: auto;
+  height: auto;
+  background-color: #9750f6;
+  transform: skewX(20deg);
+  /*transform-origin: top;*/
+  /* Zentriert den Inhalt */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding:1.3vh;
+  font-family: 'Muli', sans-serif !important;
+  font-size: 20px;
+}
+
+#parallelogram > span {
+  transform: skewX(-20deg);
+}
+.submitDiv{
+  cursor: pointer;
+}
+li:hover{
+  color: #9750f6 !important;
 }

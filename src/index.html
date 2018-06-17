@@ -160,13 +160,14 @@
 </head>
 
 <body>
+<div class="main">
 <div class="critical-render">
     <nav>
         <div class="nav01 nav-wrapper">
-            <a href="#" class="brandLogo"><img class="brandLogo" src="img/DSC_badge_white.png"</a>
+            <!--<a href="#" class="brandLogo"><img class="brandLogo" src="img/DSC_badge_white.png"</a>-->
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#">Conference</a></li>
-                <li><a href="#">Hackathon</a></li>
+                <li><a src=".eventHead" onclick="autoScroll()">Conference</a></li>
+                <li><a href="#" onclick="autoScroll()">Hackathon</a></li>
                 <li><a href="#">Timeline</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Previous Events</a></li>
@@ -661,10 +662,9 @@
             <div class="card">
                 <div class="card-content">
                     <div class="eventHead" align="middle"><b>WTM</b></div>
-                    <p align="left"> Women TechMakers is Google’s initiative for bringing more women into the technical ground and aims at creating a strong global community of women.
+                    <p align="left"> Women TechMakers is Google’s initiative for bringing more women into the technical ground and aims at creating a strong and independent global community of women.
                         WTM VIT organised a hackathon called WomenTechies in March 2018 as a part of the International Women’s Day celebrations in VIT, which was the first ever hackathon exclusively for women to take part in and to be conducted in VIT.
-                        The event brought out a number of innovative projects to light made during the span of 12 hours of rigorous coding.
-
+                        The event brought out a number of innovative projects and ideas to light made during the span of 12 hours of rigorous coding. This served as an encouragement to all women.
                     </p>
                 </div>
             </div>
@@ -674,13 +674,14 @@
             <div class="card">
                 <div class="card-content">
                     <div class="eventHead" align="middle"><b>ANDROID STUDY JAMS</b></div>
-                    <p align="left">Developers Student Circle VIT took up the initiative of organising study sessions for the students of VIT, Vellore.The study sessions revolved around Android and its various aspects and applications.There were five comprehensive weekly sessions held with an introductory session on Android followed by sessions on the know-hows of different applications of Android building on the concepts taught in the previous sessions. The series was open to all and was aimed at equipping the attendees with technical knowledge that is crucial in the field of Android, at the end of which the participants were able to make basic Android apps.
+                    <p align="left">Developers Student Circle VIT took up the initiative of organising study sessions for the students of VIT, Vellore.The study sessions revolved around Android and its various applications.There were five comprehensive weekly sessions held with an introductory session on Android followed by sessions on different applications of Android building on the concepts taught earlier.
+                        The series was open to all and was aimed at equipping the attendees with technical knowledge that is crucial in the field of Android, at the end of which the participants were able to make basic Android apps.
                     </p>
                 </div>
             </div>
         </div>
     </div>
-
+<br>
     <div class="row">
         <div class="col s12 m12" style="padding:0;">
             <span class="block black-block prevEvent">Contact Us</span><br>
@@ -705,8 +706,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col s3 field3">
-                    <button class="submit" type="button">Submit</button>
+                <div class="col s3 field3 submitDiv">
+                    <div id="parallelogram">
+                    <span>
+                        <button class="submit" type="button">Submit</button>
+                    </span>
+                    </div>
                 </div>
             </div>
 
@@ -714,22 +719,22 @@
         <div class="col s4">
             <div class="row">
                 <div class="col s6" align="right">
-                    <img class="badge" src="img/medium.png">
+                    <a href="https://medium.com/gdg-vit"><img class="badge" src="img/medium.png"></a>
                 </div>
             </div>
             <div class="row">
                 <div class="col s6" align="right">
-                    <img class="badge" src="img/insta.png">
+                    <a href="https://www.instagram.com/p/BeLG1sHAkql/"><img class="badge" src="img/insta.png"></a>
                 </div>
             </div>
             <div class="row">
                 <div class="col s6" align="right">
-                    <img class="badge" src="img/fb.png">
+                    <a href="https://www.facebook.com/dscvitvellore/"><img class="badge" src="img/fb.png"></a>
                 </div>
             </div>
             <div class="row">
                 <div class="col s6" align="right">
-                    <img class="badge" src="img/DSCcolor.png">
+                    <a href="#"><img class="badge" src="img/DSCcolor.png"></a>
                 </div>
             </div>
         </div>
@@ -772,5 +777,15 @@
         <!--</div>-->
     <!--</footer>-->
 </div>
+</div>
 </body>
+<script>
+    function autoScroll()
+    {   console.log("Working");
+        console.log($("body").scrollTop());
+        console.log($("div.main").scrollTop(400));
+        $("div.main").scrollTop(400);
+    };
+</script>
+
 </html>
