@@ -6,7 +6,67 @@ footer
     font-family: 'Muli', sans-serif;
     font-size:2vh;
 }
+nav{
+    background-color: transparent;!important;
+}
+input {
+    border: 0; !important;
+    outline: 0; !important;
+    background: transparent; !important;
+    /*border-bottom: 1px solid black;*/
+}
 
+#conf_img{
+    width: 100px; !important;
+    height: 432.6px; !important;
+}
+.eventCol{
+    width: 214.7px; !important;
+    height: 311.1px; !important;
+}
+#parallelogram {
+    width: 150px;
+    height: 100px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    background: red;
+}
+
+
+
+.field1,.field2,.field3 {
+    padding-top:12px !important;
+    border: 0px !important;
+    margin-bottom: 3vh !important;
+    margin-left: 108px !important;
+    margin-top: 2vh !important;
+    width: 359px;
+    height: 65.2px;
+    background-color: #7644c7 !important;
+    font-size: 30px !important;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+::placeholder{
+
+    width: 287px;
+    height: 36.5px;
+    font-family: ProductSans;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
 .social-heading{
     text-align: right;
     margin: 10px 10px 10px 0!important;
@@ -88,8 +148,9 @@ footer
 }
 .section-illustration{
     display: block;
-    width: 100%;
-    margin: 0 auto;
+    margin-top: -150px;
+    width: 800px;
+    height: auto;
     padding: 10vw !important;
 }
 .circle-container{
