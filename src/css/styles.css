@@ -296,6 +296,23 @@ footer
     margin:10% 0;
 }
 
+.textInputBox{
+    height:50px;
+    margin:5% 0;
+    width: 100%;
+    background-color: #7644c7;
+    border:none;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+input::placeholder{
+    color:white;
+    opacity: 1;
+}
+
 /*Mobile styles*/
 
 @media (max-width: 600px) {
