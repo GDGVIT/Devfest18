@@ -290,6 +290,12 @@ footer
     background:#7644c7;
 }
 
+.sponsorUsBtn{
+    display: flex;
+    justify-content: center;
+    margin:10% 0;
+}
+
 /*Mobile styles*/
 
 @media (max-width: 600px) {
