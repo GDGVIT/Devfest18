@@ -24,9 +24,11 @@
             margin: 0;
             padding: 0;
         }
-        html{
+
+        html {
             background-color: #2c2c2c;
         }
+
         body {
             font-family: sans-serif;
             line-height: 1.5;
@@ -36,6 +38,7 @@
             overflow-x: hidden;
 
         }
+
         h1,
         h2,
         h3,
@@ -44,27 +47,33 @@
         h6 {
             font-family: 'Muli', sans-serif;
         }
+
         a,
         p,
         b,
         span {
             font-family: 'Lato', sans-serif;
         }
+
         body::-webkit-scrollbar-track {
             background-color: #3d3d3d;
         }
+
         body::-webkit-scrollbar {
             width: 10px;
             background-color: #2c2c2c;
         }
+
         body::-webkit-scrollbar-thumb {
             /*background-color: transparent;*/
             background-color: rgba(255, 255, 255, 0.35);
         }
-        .critical-render{
+
+        .critical-render {
             min-height: 100vh;
         }
-        .trapezium{
+
+        .trapezium {
             height: 0;
             width: 0;
             z-index: -1;
@@ -76,81 +85,99 @@
             box-shadow: 0 -15vh 0 0 #313131;
             margin-top: 15vh;
             position: absolute;
-            top:0;
+            top: 0;
             left: 0;
         }
-        .critical-content{
+
+        .critical-content {
             display: flex;
         }
-        .title,.title-illustration{
+
+        .title, .title-illustration {
             flex-grow: 1;
             width: 50vh;
         }
-        .title{
+
+        .title {
             align-self: center;
             padding-left: 10%;
         }
-        .title *{
+
+        .title * {
             font-weight: 700;
         }
-        .title h1{
+
+        .title h1 {
             font-size: 100px;
             color: #fff;
             margin: 2.1rem 0 1.68rem 0;
             line-height: 110%;
         }
-        .title .year{
+
+        .title .year {
             font-size: 50px;
             color: #7b47d1;
         }
-        .title h4{
+
+        .title h4 {
             font-size: 30px;
             color: #fff;
             margin: 1.14rem 0 .912rem 0;
         }
-        .title-illustration{
+
+        .title-illustration {
             padding-top: 20vh;
             position: relative;
             text-align: center;
         }
-        .title-illustration img{
-            width:65%;
+
+        .title-illustration img {
+            width: 65%;
             height: auto
         }
-        @media (max-width:600px) {
-            .trapezium{
+
+        @media (max-width: 600px) {
+            .trapezium {
                 border-width: 60vh 100vw 0 0;
                 -webkit-box-shadow: 0 -30vh 0 0 #313131;
                 -moz-box-shadow: 0 -30vh 0 0 #313131;
                 box-shadow: 0 -30vh 0 0 #313131;
                 margin-top: 30vh;
             }
-            .critical-content{
+
+            .critical-content {
                 flex-direction: column;
                 margin-bottom: 20px;
             }
-            .title,.title-illustration{
+
+            .title, .title-illustration {
                 width: 100vw;
             }
-            .title{
+
+            .title {
                 width: 100%;
             }
-            .title h1{
+
+            .title h1 {
                 padding-top: 10vh;
                 font-size: 70px;
             }
-            .title .year{
+
+            .title .year {
                 font-size: 40px;
             }
-            .title h4{
+
+            .title h4 {
                 font-size: 35px;
                 width: 75%;
             }
-            .title-illustration{
+
+            .title-illustration {
                 padding-top: 10vh;
             }
-            .title-illustration img{
-                width:90%;
+
+            .title-illustration img {
+                width: 90%;
             }
         }
     </style>
@@ -192,25 +219,32 @@
         </div>
     </div>
     <!--Resize contents-->
-    <div class="row resize-height">
-        <div class="col s10 m5 push-s2 section-content-container">
-            <h2><span class="circle-block purple-block">1</span> <span class="section-title">The Hack</span></h2>
-            <p class="section-content">The two week long extensive hack aims to bring out developers with innovative solutions to real world problems. You will have the support of mentors who would guide you throughout the two week period. It is a platform to test your potential and in parallel, help you apply and improve your skills with the aid of experienced and supportive mentors. It is an unparalleled opportunity to build something incredible and employ a novel approach which could potentially solve problems for thousands of people. With time and expertise on your side, all you need is an eagerness to learn and a never give up attitude. There will be multiple reviews in which the top teams go through. The teams who qualify for the final round will get exclusive invites to the conference and get a chance to interact with the speakers one-on-one.</p>
-        </div>
-        <div class="col s2 m2 pull-s10 section-svg-container">
-            <svg class="connect" height="320px" width="44px">
-                <circle class="inner-circle" cx="22" cy="44" r="22"></circle>
-                <path class="line-segment" d="M22,0 v300"></path>
-            </svg>
-        </div>
-        <div class="col s10 m5 offset-s2 section-illustration-container">
-            <img src="./img/hack.png" alt="" class="section-illustration">
-        </div>
-    </div>
+    <!--<div class="row resize-height">-->
+    <!--<div class="col s10 m5 push-s2 section-content-container">-->
+    <!--<h2><span class="circle-block purple-block">1</span> <span class="section-title">The Hack</span></h2>-->
+    <!--<p class="section-content">The two week long extensive hack aims to bring out developers with innovative solutions to real world problems. You will have the support of mentors who would guide you throughout the two week period. It is a platform to test your potential and in parallel, help you apply and improve your skills with the aid of experienced and supportive mentors. It is an unparalleled opportunity to build something incredible and employ a novel approach which could potentially solve problems for thousands of people. With time and expertise on your side, all you need is an eagerness to learn and a never give up attitude. There will be multiple reviews in which the top teams go through. The teams who qualify for the final round will get exclusive invites to the conference and get a chance to interact with the speakers one-on-one.</p>-->
+    <!--</div>-->
+    <!--<div class="col s2 m2 pull-s10 section-svg-container">-->
+    <!--<svg class="connect" height="320px" width="44px">-->
+    <!--<circle class="inner-circle" cx="22" cy="44" r="22"></circle>-->
+    <!--<path class="line-segment" d="M22,0 v300"></path>-->
+    <!--</svg>-->
+    <!--</div>-->
+    <!--<div class="col s10 m5 offset-s2 section-illustration-container">-->
+    <!--<img src="./img/hack.png" alt="" class="section-illustration">-->
+    <!--</div>-->
+    <!--</div>-->
     <div class="row resize-height">
         <div class="col s10 m5 push-m7 push-s2 section-content-container right-column">
-            <h2><span class="hide-on-med-and-up"><span class="circle-block purple-block">2</span> </span><span class="section-title">The Conference</span> <span class="circle-block purple-block hide-on-small-only">2</span></h2>
-            <p class="section-content">This conference provides a platform for students to interact with professionals from  	various fields willing to share their unique experiences. Tech enthusiasts share their experiences and provide the beginners with a new vision towards technological advancement. The conference begins with keynote sessions by all the speakers, followed by an engaging panel discussion and a Q&A session. Not only this, curious students who are seen to be most involved in the conference will be given a chance for influential networking with the panel of speakers. </p>
+            <h2><span class="hide-on-med-and-up"><span class="circle-block purple-block">2</span> </span><span
+                    class="section-title">The Conference</span> <span
+                    class="circle-block purple-block hide-on-small-only">2</span></h2>
+            <p class="section-content">This conference provides a platform for students to interact with professionals
+                from various fields willing to share their unique experiences. Tech enthusiasts share their experiences
+                and provide the beginners with a new vision towards technological advancement. The conference begins
+                with keynote sessions by all the speakers, followed by an engaging panel discussion and a Q&A session.
+                Not only this, curious students who are seen to be most involved in the conference will be given a
+                chance for influential networking with the panel of speakers. </p>
         </div>
         <div class="col s2 m2 pull-s10 section-svg-container">
             <svg class="connect" height="320px" width="44px">
@@ -224,25 +258,25 @@
     </div>
     <div class="row resize-height">
         <div class="col s10 m5 push-s2 section-content-container">
-            <h2><span class="circle-block purple-block">3</span> <span class="section-title">What to expect</span></h2>
+            <h2><span class="circle-block purple-block">3</span> <span class="section-title">Hackathon</span></h2>
             <div class="row expect-control">
+                <div class="col s6">
+                    <div class="circle-container circle">
+                        <img src="./img/Group%202.svg" alt="">
+                    </div>
+                    <h5 class="circle-caption">Hackathon</h5>
+                </div>
                 <div class="col s6">
                     <div class="circle-container circle">
                         <img src="./img/Group%203.svg" alt="">
                     </div>
-                    <h5 class="circle-caption">Conference</h5>
+                    <h5 class="circle-caption">Keynotes</h5>
                 </div>
                 <div class="col s6">
                     <div class="circle-container circle">
                         <img src="./img/Group%204.svg" alt="">
                     </div>
                     <h5 class="circle-caption">Networking</h5>
-                </div>
-                <div class="col s6">
-                    <div class="circle-container circle">
-                        <img src="./img/Group%202.svg" alt="">
-                    </div>
-                    <h5 class="circle-caption">Hackathon</h5>
                 </div>
             </div>
         </div>
@@ -252,22 +286,59 @@
                 <path class="line-segment" d="M22,0 v300"></path>
             </svg>
         </div>
-        <div class="col s10 m5 offset-s2 section-content-container right-column">
+        <div class="col s10 m5 offset-s2 section-content-container" style="margin-top:5%">
             <div class="expect-content">
-                <div class="section-content"> Smartness is to learn from experience of others. Listen to the stories of those who made it big. Get a chance to meet the experts face to face</div>
-                <div class="section-content">Talk. Discuss. Ideate. Connect. Get a chance to go one-on-one with the speakers during the networking session.</div>
-                <div class="section-content">Do you have what it takes for sustained creativity in solving problems? Can you apply your skills at scale to build something extraordinary? Join us for an exciting 15 day journey and experience it yourself.</div>
+                <div class="section-content">About the hackathon</div>
+                <div class="section-content">Prizes to be announced soon</div>
+                <div class="section-content">First ever 25 day hackathon in VIT</div>
             </div>
         </div>
     </div>
     <!--Speakers Section-->
     <!--Speakers Section End-->
+    <!--Apply for the event starts-->
+    <div>
+        <div class="row">
+            <div class="col s12 m12" style="padding:0;">
+                <span class="block black-block timeline-title">Apply</span>
+            </div>
+        </div>
+        <div class="row" style="margin:8% 0">
+            <div class="col s10 m3 push-m1 white-text">
+                <h5>Choose your event</h5>
+                <form>
+                    <label class="cont"><span style="margin:1vw">Conference</span>
+                        <input type="checkbox" value="conference">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="cont"><span style="margin:1vw">Hackathon</span>
+                        <input type="checkbox" value="hackathon">
+                        <span class="checkmark"></span>
+                    </label>
+                    <h5 style="margin: 4% 0 1% 0">External or internal participant?</h5>
+                    <label class="cont"><span style="margin:1vw">External<br/><span class="row"
+                                                                                    style="font-size: 75%;margin-left: 3%;text-align: center">We won't be providing any accomodation of travel and stay for external participants</span> </span>
+                        <input type="checkbox" value="external">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div class="row">
+                        <div class="col s6" >
+                            <span class="center-align valign-wrapper" style="font-size:150%;cursor:pointer;position: absolute;z-index:4;width:230px;height:75px;justify-content: space-around;">Submit</span>
+                            <div class="parallelogram"></div>
+                            <div class="parallelogram-base"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!--Timeline Start-->
     <div>
         <div class="row">
             <div class="col s12 m12" style="padding:0;">
-                <span class="block black-block timeline-title" >Timeline</span>
+                <span class="block black-block timeline-title">Timeline</span>
             </div>
         </div>
         <div class="timeline-container">
@@ -585,7 +656,7 @@
     </div>
     <!--Timeline End-->
     <footer>
-        <div class="row" >
+        <div class="row">
             <div class="col s12 m4 l4 offset-l2 contact-us">
                 <h5 class="white-text contact-us-heading">Contact Us</h5>
                 <p class="grey-text text-lighten-4">
