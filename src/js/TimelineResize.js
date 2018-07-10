@@ -2,7 +2,7 @@ import $ from 'jquery'
 import resize from './ResizeSvg';
 
 function ResTimeline($container) {
-    let $vertical=$container.find('.left-line,.right-line');
+    let $vertical=$container.find('.left-line,.right-line,.center-line');
     let $horizontal =$container.find('.bottom-line');
     let h = $container.height();
     let w= $container.width();
