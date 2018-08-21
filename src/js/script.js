@@ -6,6 +6,11 @@ import initCarousel from './CircleSlider';
 import timelineResize from './TimelineResize'
 import mobileResize from './mobileTimeline'
 
+var triggerResize = function(){
+    console.log('called');
+    resizeHandler();
+};
+
 function resizeHandler(){
     $('.resize-height').each(function (i) {
         resize($(this),true);
@@ -71,4 +76,8 @@ $(window).resize(resizeHandler);
 $(function () {
     // ------ Scripts here --------
     carouselHandler();
+});
+
+$(window).bind("load", function() {
+    resizeHandler();
 });
