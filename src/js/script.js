@@ -65,9 +65,6 @@ function register() {
         Materialize.toast('Network connectivity error !',3000);
     })
 }
-$('#notify').click(()=>{
-    register();
-});
 resizeHandler();
 $(window).resize(resizeHandler);
 
