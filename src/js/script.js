@@ -70,10 +70,6 @@ $('#notify').click(()=>{
 });
 resizeHandler();
 $(window).resize(resizeHandler);
-$(function () {
-    // ------ Scripts here --------
-    carouselHandler();
-});
 
 $(window).bind("load", function() {
     resizeHandler();

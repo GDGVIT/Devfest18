@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="320px" width="10px">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #7b47d1;
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M5,0 v320"/>
+</svg>
